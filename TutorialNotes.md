@@ -12,3 +12,6 @@ https://reactrouter.com/web/api/BrowserRouter
 Chapter #10
 -Working on the Nav Bar
 -Added red background to NavBar route localhost/search
+
+Chapter #11
+-Added props to the SearchBar.js file and made all the icons/search bars smaller.
