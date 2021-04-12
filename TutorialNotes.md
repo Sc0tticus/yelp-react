@@ -15,3 +15,9 @@ Chapter #10
 
 Chapter #11
 -Added props to the SearchBar.js file and made all the icons/search bars smaller.
+
+Chapter #12
+-creating sub navigation bar under search
+bar component in the /search route.
+-creating SubNavBar items
+-added icons to SubNavBar
