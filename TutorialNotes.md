@@ -21,3 +21,13 @@ Chapter #12
 bar component in the /search route.
 -creating SubNavBar items
 -added icons to SubNavBar
+
+Chapter #13
+-thinking of skipping this sub nav bar section
+
+Chapter #14
+-thinking of skipping this sub nav bar section
+
+Chapter #15 (32 chapters in total)
+-create search results summary component
+-created grey bar under search menu that diplays your search results.

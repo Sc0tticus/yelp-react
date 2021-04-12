@@ -1,12 +1,14 @@
 import React from 'react';
 import { NavBar } from '../NavBar/NavBar';
-import { SubNav } from '../SearchBar/SubNav/SubNav';
+import { SubNav } from '../NavBar/SubNav/SubNav';
+import { SearchResultsSummary } from './SearchResultsSummary/SearchResultsSummary';
 
 export function Search() {
 	return (
 		<div>
 			<NavBar />
-			<SubNav />
+			{/* <SubNav /> */}
+			<SearchResultsSummary />
 		</div>
 	);
 }
