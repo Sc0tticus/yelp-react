@@ -31,3 +31,6 @@ Chapter #14
 Chapter #15 (32 chapters in total)
 -create search results summary component
 -created grey bar under search menu that diplays your search results.
+
+Chapter #16
+Added Filter Icons and $ symbols on the Icons in the Search Results gray section below the search bar
