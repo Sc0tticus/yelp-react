@@ -33,4 +33,4 @@ Chapter #15 (32 chapters in total)
 -created grey bar under search menu that diplays your search results.
 
 Chapter #16
-Added Filter Icons and $ symbols on the Icons in the Search Results gray section below the search bar
+Added Filter Icons and $ symbols on the Icons in the Search Results gray section below the search bar.
