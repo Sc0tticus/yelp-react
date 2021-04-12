@@ -8,3 +8,7 @@ npm install use-react-router
 https://reactrouter.com/web/api/BrowserRouter
 -Wrapped <App> in BrowserRouter component.
 -Set up routing in App.js
+
+Chapter #10
+-Working on the Nav Bar
+-Added red background to NavBar route localhost/search
