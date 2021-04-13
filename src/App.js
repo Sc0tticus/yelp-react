@@ -1,10 +1,7 @@
 import React from 'react';
 import { LandingPage } from './LandingPage/LandingPage';
 import { Route, Switch } from 'react-router-dom';
-import { Search } from './Search/Search.js';
-
-// Switch, means find the first case that matches the current situation
-// or the first route in React Router that matches
+import { Search } from './Search/Search';
 
 function App() {
 	return (
