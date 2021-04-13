@@ -47,3 +47,9 @@ npm install --save react-rating
 -stylized stars for Yelp reviews
 
 Chapter #20
+-finished styling static Yelp results.
+
+Chapter #21
+-Going to start making the application dynamic and going to start using React Hooks
+-Implementing State in SearchBar.js
+-implemented onSubmit and forms and hooks into SearchBar.js

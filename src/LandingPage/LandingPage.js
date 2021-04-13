@@ -7,13 +7,13 @@ import { SearchSuggestions } from './SearchSuggestions/SearchSuggestions';
 
 export function LandingPage() {
 	return (
-		<di className={styles.landing}>
+		<div className={styles.landing}>
 			<div className={styles['search-area']}>
 				<TopNav />
 				<img src={yelpLogo} className={styles.yelpLogo} alt="logo" />
 				<SearchBar />
 				<SearchSuggestions />
 			</div>
-		</di>
+		</div>
 	);
 }
