@@ -182,4 +182,4 @@ console.log('I am called');
 performSearch({ term, location });
 }
 
--added ability to dynamically search for things on the /search page.
+-added ability to dynamically search for things on the /search page and landing page.
