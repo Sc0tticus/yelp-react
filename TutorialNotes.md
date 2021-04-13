@@ -183,3 +183,8 @@ performSearch({ term, location });
 }
 
 -added ability to dynamically search for things on the /search page and landing page.
+
+Chapter #30
+Updated Sarch.js to enable query params to get updated in real time on new query's.
+-creating a spinner component with spinner.js and corresponding css module
+-added spinner icon rendering in SpearchResults.js and added spinner styling to relevant CSS file.
