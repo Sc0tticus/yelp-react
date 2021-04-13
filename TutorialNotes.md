@@ -74,3 +74,11 @@ API Key
 eNaf0vZMUNd-TRwWzw1G4sokf22oJfhdyVrV7EJ_a9jTGXFXZ6BEd-sSw7E0EI00pF5hd3Qa0wnU6vTnJWA2EF5VcV2zhGnEotJtGB7hA_Q8MRk-BlePjxhwL0FpYHYx
 
 -In CH. 24 we added 0 code to our project, and he just showed how to use Postman with the Yelp Fusion API.
+
+Chapter #25
+Created a "hooks" folder and a "yelp-api" folder inside the Hooks folder. Then created a config-api.js file inside the yelp-api folder.
+-Created a api.js inside yelp-api folder.
+
+npm install query-string
+
+-built out fetch request with authorization headers in api.js
