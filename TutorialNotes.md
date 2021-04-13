@@ -106,3 +106,13 @@ const [searchParams, setSearchParams] = useState({ term, location });
     return [businesses, amountResults, searchParams, setSearchParams];
 
 }
+
+Chapter #27
+-Need to use the CORS-anwhere GitHub repo for in order to use the Yelp Fusion api:
+https://github.com/Rob--W/cors-anywhere
+-this repo acts as a proxy,
+
+#URL that grants temporary access
+https://cors-anywhere.herokuapp.com/corsdemo
+
+-built out the Search.js component.

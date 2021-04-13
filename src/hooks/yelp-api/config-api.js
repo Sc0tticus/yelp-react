@@ -1,4 +1,6 @@
-export const API_BASE_URL = 'https://api.yelp.com/v3';
+// export const API_BASE_URL = 'https://cors-anywhere.herokuapp.com/corsdemo/https://api.yelp.com/v3';
+// format in the YouTube video:
+export const API_BASE_URL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3';
 
 // Typically would create a server to use the token to hide it but not enough time to make that happen.
 // FIXME: A bearer token is never supposed to be exposed to the outside world.
