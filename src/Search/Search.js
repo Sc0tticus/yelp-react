@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavBar } from '../NavBar/NavBar';
-// import { SubNav } from '../NavBar/SubNav/SubNav';
-import { SearchResults } from './SearchResults/SearchResults';
+import { SubNav } from '../NavBar/SubNav/SubNav';
 import { SearchResultsSummary } from './SearchResultsSummary/SearchResultsSummary';
+import { SearchResults } from './SearchResults/SearchResults';
 import useReactRouter from 'use-react-router';
 import { useBusinessSearch } from '../hooks/yelp-api/useBusinessSearch';
 
@@ -16,8 +16,9 @@ export function Search() {
 	if (!term || !locationParam) {
 		history.push('/');
 	}
+
 	function search(term, location) {
-		const encodedTerm = encodeURI(location);
+		const encodedTerm = encodeURI(term);
 		const encodedLocation = encodeURI(location);
 		history.push(`/search?find_desc=${encodedTerm}&find_loc=${encodedLocation}`);
 		performSearch({ term, location });
@@ -26,9 +27,9 @@ export function Search() {
 	return (
 		<div>
 			<NavBar term={term} location={locationParam} search={search} />
-			{/* <SubNav /> */}
+			<SubNav />
 			<SearchResultsSummary
-				term={term}
+				term={searchParams.term}
 				location={searchParams.location}
 				amountResults={amountResults}
 				shownResults={businesses ? businesses.length : 0}
