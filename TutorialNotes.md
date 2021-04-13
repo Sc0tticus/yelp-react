@@ -61,3 +61,16 @@ Chapter #22
 Chapter #23
 -worked on getting the /search route search bars autofilled with the search params from
 the landing page.
+
+Chapter #24
+-Get set up with the Yelp Fusion API.
+-Open Postman on the Mac
+https://app.getpostman.com/run-collection/6b506a43109229cb2798
+
+Client ID
+PRf0WHLd3FwdtZ3TJnOjjA
+
+API Key
+eNaf0vZMUNd-TRwWzw1G4sokf22oJfhdyVrV7EJ_a9jTGXFXZ6BEd-sSw7E0EI00pF5hd3Qa0wnU6vTnJWA2EF5VcV2zhGnEotJtGB7hA_Q8MRk-BlePjxhwL0FpYHYx
+
+-In CH. 24 we added 0 code to our project, and he just showed how to use Postman with the Yelp Fusion API.
