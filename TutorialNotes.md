@@ -57,3 +57,7 @@ Chapter #21
 Chapter #22
 -implemented a search function that enables query params and redirection from the landing page to the /search route.
 -If you click on the Yelp Logo in the Search route you are re-directed back to the Landing Page.
+
+Chapter #23
+-worked on getting the /search route search bars autofilled with the search params from
+the landing page.
