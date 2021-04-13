@@ -15,7 +15,7 @@ export function SearchResultsSummary(props) {
 		<div className={styles.container}>
 			<div className={styles['search-summary']}>
 				<h1 className="subtitle">
-					<strong>{props.term}</strong>Los Angeles
+					<strong>{props.term}</strong>
 				</h1>
 				<p>{resultStats}</p>
 			</div>
