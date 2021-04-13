@@ -1,14 +1,14 @@
 import React from 'react';
-import yelpLogo from '../assets/yelpLogo.png';
-import { SearchBar } from '../SearchBar/SearchBar';
+import logo from '../assets/logo.png';
 import styles from './NavBar.module.css';
+import { SearchBar } from '../SearchBar/SearchBar';
 import { Link } from 'react-router-dom';
 
 export function NavBar(props) {
 	return (
 		<div className={styles['nav-bar']}>
 			<Link to="/">
-				<img src={yelpLogo} className={styles['nav-bar']} alt="yelp logo" />
+				<img src={logo} className={styles.logo} alt="belb logo" />
 			</Link>
 			<SearchBar small term={props.term} location={props.location} search={props.search} />
 			<button className={`button ${styles['nav-button']}`}>Sign In</button>
