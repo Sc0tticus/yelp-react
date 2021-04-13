@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 import * as api from './api';
 
-// any time you want to do an async network request, useEffect hook must be used
-
 export function useBusinessSearch(term, location) {
 	const [businesses, setBusinesses] = useState([]);
-	const [amountResults, setAmountResults] = useState([]);
+	const [amountResults, setAmountResults] = useState();
 	const [searchParams, setSearchParams] = useState({ term, location });
 
 	useEffect(() => {
