@@ -44,3 +44,6 @@ Chapter #18
 
 Chapter #19
 npm install --save react-rating
+-stylized stars for Yelp reviews
+
+Chapter #20

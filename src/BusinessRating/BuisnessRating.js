@@ -6,7 +6,7 @@ export function BusinessRating() {
 	return (
 		<div className={styles.rating}>
 			<Rating emptySymbol="far fa-star" fullSymbol="fas fa-star" fractions={2} readonly initialRating={3} />
-			BuisnessRating
+			<p>724 Reviews</p>
 		</div>
 	);
 }
