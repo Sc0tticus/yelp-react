@@ -40,3 +40,7 @@ Chapter #17
 on the /search route.
 
 Chapter #18
+-Added search image descriptions
+
+Chapter #19
+npm install --save react-rating
