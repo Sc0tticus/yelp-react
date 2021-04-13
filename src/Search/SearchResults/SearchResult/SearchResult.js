@@ -9,6 +9,13 @@ export function SearchResult(props) {
 		return <div></div>;
 	}
 
+	const tags = biz.categories.map(category => (
+		<span className={`tag ${styles['business-tag']}`} key={biz.id + category.title}>
+			{category.title}
+		</span>
+	));
+	const adressLines = biz.location.display_address.map(adressLine => <p key={biz.id + adressLine}>{adressLine}</p>);
+
 	return (
 		<div>
 			SearchResult
@@ -18,14 +25,12 @@ export function SearchResult(props) {
 					<h2 className="subtitle">{biz.name}</h2>
 					<BusinessRating reviewCount={biz.review_count} rating={biz.rating} />
 					<p>
-						$$ <span className="tag">Burgers</span>
-						<span className="tag">Fast Food</span>
+						{biz.price} {tags}
 					</p>
 				</div>
 				<div className={styles['contact-info']}>
-					<p>+123-456-789</p>
-					<p>Example Street 5</p>
-					<p>12345 Berlin</p>
+					<p>{biz.phone}</p>
+					{adressLines}
 				</div>
 			</div>
 		</div>

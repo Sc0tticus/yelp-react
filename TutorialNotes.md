@@ -120,3 +120,55 @@ https://cors-anywhere.herokuapp.com/corsdemo
 Chapter #28
 Updating SearchResult.js to return Yelp Search Images Dynamically.
 -passed all Yelp API result props dynamically into SearchResult.js and BusinessRating.js
+
+Chapter #29
+Updating the SearchResult.js file to include Yelp Api tags.
+Did this:
+const tags = biz.categories.map(category => (
+<span className={`tag ${styles['business-tag']}`} key={biz.id + category.title}>
+{category.title}
+</span>
+));
+Inside SearchResult.js
+
+Added this styling to SearchResult.module.css:
+:global(.tag).business-tag {
+margin-right: 4px;
+}
+
+Made SearchResult.js have Yelp API content passed into the UI dynamically:
+export function SearchResult(props) {
+const biz = props.business;
+
+    if (!props.business) {
+    	return <div></div>;
+    }
+
+    const tags = biz.categories.map(category => (
+    	<span className={`tag ${styles['business-tag']}`} key={biz.id + category.title}>
+    		{category.title}
+    	</span>
+    ));
+    const adressLines = biz.location.display_address.map(adressLine => <p key={biz.id + adressLine}>{adressLine}</p>);
+
+    return (
+    	<div>
+    		SearchResult
+    		<div className={styles['search-result']}>
+    			<img src={biz.image_url} alt="business" className={styles['business-image']} />
+    			<div className={styles['business-info']}>
+    				<h2 className="subtitle">{biz.name}</h2>
+    				<BusinessRating reviewCount={biz.review_count} rating={biz.rating} />
+    				<p>
+    					{biz.price} {tags}
+    				</p>
+    			</div>
+    			<div className={styles['contact-info']}>
+    				<p>{biz.phone}</p>
+    				{adressLines}
+    			</div>
+    		</div>
+    	</div>
+    );
+
+}
