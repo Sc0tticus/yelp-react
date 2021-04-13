@@ -34,3 +34,7 @@ Chapter #15 (32 chapters in total)
 
 Chapter #16
 Added Filter Icons and $ symbols on the Icons in the Search Results gray section below the search bar.
+
+Chapter #17
+-Created SearchResult/(s) components and put placeholder images in place
+on the /search route.
