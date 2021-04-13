@@ -172,3 +172,14 @@ const biz = props.business;
     );
 
 }
+
+Chapter #30
+-enabled search reults text to become dynamic SearchResultsSummary.js
+
+Added this to Search.js
+function search(term, location) {
+console.log('I am called');
+performSearch({ term, location });
+}
+
+-added ability to dynamically search for things on the /search page.
