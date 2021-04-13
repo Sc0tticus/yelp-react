@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './SearchResultsSummary.module.css';
+// Finshed produc
 
 export function SearchResultsSummary(props) {
 	let resultStats = null;
