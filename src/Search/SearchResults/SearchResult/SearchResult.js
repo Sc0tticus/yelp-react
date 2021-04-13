@@ -1,16 +1,22 @@
 import React from 'react';
-import { BusinessRating } from '../../../BusinessRating/BuisnessRating';
+import { BusinessRating } from '../../../BusinessRating/BusinessRating';
 import styles from './SearchResult.module.css';
 
-export function SearchResult() {
+export function SearchResult(props) {
+	const biz = props.business;
+
+	if (!props.business) {
+		return <div></div>;
+	}
+
 	return (
 		<div>
 			SearchResult
 			<div className={styles['search-result']}>
-				<img src="https://via.placeholder.com/210" alt="business" className={styles['business-image']} />
+				<img src={biz.image_url} alt="business" className={styles['business-image']} />
 				<div className={styles['business-info']}>
-					<h2 className="subtitle">Burger Place</h2>
-					<BusinessRating />
+					<h2 className="subtitle">{biz.name}</h2>
+					<BusinessRating reviewCount={biz.review_count} rating={biz.rating} />
 					<p>
 						$$ <span className="tag">Burgers</span>
 						<span className="tag">Fast Food</span>

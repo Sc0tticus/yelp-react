@@ -84,18 +84,18 @@ npm install query-string
 -built out fetch request with authorization headers in api.js
 
 Chapter #26
-export function useBuisnessSearch(term, location) {
-const [businesses, setBuisnesses] = useState([]);
+export function useBusinessSearch(term, location) {
+const [businesses, setBusinesses] = useState([]);
 const [amountResults, setAmountResults] = useState([]);
 const [searchParams, setSearchParams] = useState({ term, location });
 
     useEffect(() => {
-    	setBuisnesses([]);
+    	setBusinesses([]);
     	const fetchData = async () => {
     		try {
     			const rawData = await api.get('/businesses/search', searchParams);
     			const resp = await rawData.json();
-    			setBuisnesses(resp.businesses);
+    			setBusinesses(resp.businesses);
     			setAmountResults(resp.total);
     		} catch (e) {
     			console.error(e);
@@ -116,3 +116,7 @@ https://github.com/Rob--W/cors-anywhere
 https://cors-anywhere.herokuapp.com/corsdemo
 
 -built out the Search.js component.
+
+Chapter #28
+Updating SearchResult.js to return Yelp Search Images Dynamically.
+-passed all Yelp API result props dynamically into SearchResult.js and BusinessRating.js
