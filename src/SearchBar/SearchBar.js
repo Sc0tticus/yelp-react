@@ -9,7 +9,9 @@ export function SearchBar(props) {
 	const sizeClass = props.small ? '' : 'is-medium';
 
 	function onSubmit(e) {
-		console.log(term, location);
+		if (typeof props.search === 'function') {
+			props.search(term, location);
+		}
 		e.preventDefault();
 	}
 

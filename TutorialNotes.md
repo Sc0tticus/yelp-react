@@ -53,3 +53,7 @@ Chapter #21
 -Going to start making the application dynamic and going to start using React Hooks
 -Implementing State in SearchBar.js
 -implemented onSubmit and forms and hooks into SearchBar.js
+
+Chapter #22
+-implemented a search function that enables query params and redirection from the landing page to the /search route.
+-If you click on the Yelp Logo in the Search route you are re-directed back to the Landing Page.
