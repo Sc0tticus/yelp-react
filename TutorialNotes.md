@@ -188,3 +188,5 @@ Chapter #30
 Updated Sarch.js to enable query params to get updated in real time on new querys.
 -creating a spinner component with spinner.js and corresponding css module
 -added spinner icon rendering in SpearchResults.js and added spinner styling to relevant CSS file.
+
+Chapter #31 (final chapter)

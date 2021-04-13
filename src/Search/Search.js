@@ -13,6 +13,9 @@ export function Search() {
 	const locationParam = params.get('find_loc');
 	const [businesses, amountResults, searchParams, performSearch] = useBusinessSearch(term, locationParam);
 
+	if (!term || !locationParam) {
+		history.push('/');
+	}
 	function search(term, location) {
 		const encodedTerm = encodeURI(location);
 		const encodedLocation = encodeURI(location);
