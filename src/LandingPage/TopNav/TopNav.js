@@ -8,7 +8,7 @@ export function TopNav() {
 				<span>Write a Review</span>
 				<span>Events</span>
 			</div>
-			<div className={styles.left}>
+			<div className={styles.right}>
 				<span>Login</span>
 				<button className="button">Sign up</button>
 			</div>
