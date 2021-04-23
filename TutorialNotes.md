@@ -190,4 +190,5 @@ Updated Sarch.js to enable query params to get updated in real time on new query
 -added spinner icon rendering in SpearchResults.js and added spinner styling to relevant CSS file.
 
 Chapter #31 (final chapter)
+
 -user gets redirected if you only put in 1/2 query params to the landing page.
